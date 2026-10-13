@@ -1,70 +1,77 @@
 # PROJECT ZERO-DAY: THE LAST DEPLOY
 
-## Production status: IN PROGRESS — POC rendered; feature not produced
+## Production status: IN PROGRESS — 60-second 3D POC rendered; feature not produced
 
-This repository contains the existing 44-scene screenplay and preproduction package, plus a **single 60-second stylized 2D proof of concept**. It does **not** contain the requested approximately 30-minute feature film, any 4K master, recorded human performances, or a complete feature playback/QC pass. The POC is not a trailer or finished film.
+The repository contains the preserved 44-scene screenplay and preproduction package, an earlier 2D prototype, and a **single continuous 60-second low-poly procedural 3D proof of concept**. It does **not** contain the requested approximately 30-minute feature film, a 4K master, recorded human performances/dialogue, or a complete feature playback/QC pass. Neither POC is a trailer or finished film.
 
-## Actual video deliverable
+## Current video deliverable — procedural 3D POC
 
-- **File:** [`renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4`](renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4)
-- **Verified public repository file page:** [GitHub](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4) · [direct MP4 download](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4). The GitHub Contents API reported the uploaded path/size/Git blob hash; raw API bytes were downloaded back and compared byte-for-byte with the local file.
-- **Measured:** MP4, 60.000 seconds; H.264 High, 1280×720, 24 fps, 1,440 frames; AAC-LC stereo 48 kHz; 5,071,735 bytes.
-- **SHA-256:** `77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`.
-- This is one continuous procedural 2D animation sequence: a stylized engineer types at a workstation during a canary deployment, notices an asynchronous queue anomaly, traces duplicate delivery/late receipt evidence, and pauses outbound dispatch while preserving intake. The figure's face, body, eyes, hands and posture move; interface values and camera framing change over time. It is not a still-image pan or slideshow.
-- The visual is flat-color procedural animation—not live action, photoreal footage, Blender 3D, or a captured actor. Audio is an original synthesized non-dialogue soundscape with timed effects. There is no recorded speech, voice actor, or lip sync. The last seconds display an explicit “not the finished film” label.
-- FFprobe measured both streams at 60.000 seconds; a full FFmpeg decode passed and no adjacent video frames were identical. Six representative moments were opened for visual review. A human real-time full-length playback/listening pass was **not** completed because the container has no local display/audio device. See the separate POC and quality reports for the exact checks and limitations.
+- **File:** [`renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4`](renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4)
+- **GitHub branch file:** [view MP4](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4) · [direct download](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4)
+- **Measured:** MP4, 60.000 seconds; H.264 High, 1280×720, 24 fps, 1,440 frames; AAC-LC stereo 48 kHz, 60.000 seconds; 6,284,063 bytes.
+- **SHA-256:** `709661f705b401c8eb48b255243371f17a2e7e6087b6373b78de78816387b8ae`.
+- **What it is:** one continuous software-rendered 3D sequence: a custom primitive character at a workstation types through a rollout, reacts to changing queue/trace evidence, and pauses outbound publishing. Character parts, head/eyes/hands, monitor state and camera move over time. Generated non-dialogue sound cues accompany the action. It is not a still-image pan, slideshow or collection of disconnected clips.
+- **Important quality limitation:** the characters and room are conspicuously primitive/low-poly; this does **not** reach cinematic or photorealistic realism. No live actor, recorded performance, motion capture, spoken dialogue or lip-sync is present. Treat this as a narrow technical 3D animation proof, not a quality-approved film asset.
+- Full FFmpeg decode, stream checks, frame-hash check and active-picture black detection passed. Six selected frames were opened and reviewed. **Full human playback/listening and artistic approval remain open.** See the [POC report](production/proof_of_concept_report.md), [quality report](production/quality_report.md), and [machine-readable QC result](production/qc_poc_3d.json).
 
-The five entries in [`production/render_manifest.csv`](production/render_manifest.csv) are review ranges within that one MP4; they are not separate clips. No release or feature-film download link exists.
+## Preserved earlier 2D prototype
+
+- [`renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4`](renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4) — a separate 60-second flat-color procedural 2D proof, technically validated and published earlier. It is retained for provenance and comparison; it does not replace the current 3D POC or meet the stricter 3D/recorded-performance preference.
 
 ## Feature production status and limits
 
-The requested target remains approximately 30 minutes, with native 4K/24 fps only if source and compute support it. No feature scene or planned shot has been produced: the original [`shot_manifest.csv`](production/shot_manifest.csv) remains marked **NOT PRODUCED** for all 132 planned moving shots, and the scene manifest remains a plan. `production_state.json` distinguishes this feature plan from the 60-second POC.
+The target remains approximately 30 minutes, with 4K/24 fps only if actual source and compute support it. No feature scene or planned shot has been produced: the original [`shot_manifest.csv`](production/shot_manifest.csv) remains **NOT PRODUCED** for all 132 planned moving shots, and the 44-scene manifest is still a plan. `production_state.json` distinguishes feature scope from POC work.
 
-The POC establishes that a small local Pillow/NumPy/FFmpeg animation can render. It does not provide 44-scene art/character/location coverage, a human performance or dialogue workflow, a full audio/post pipeline, or the quality bar of a finished thriller. Blender's Python wheel cannot run here because seven system graphics libraries are missing. The environment has no camera, video-generation/performance-capture system, GPU, or audio playback device, and exposes two CPU threads and about 3.8 GiB RAM. The full film is therefore still **IN PROGRESS / BLOCKED**, not complete.
+The current POC proves that a small free, software-rendered procedural 3D pipeline can encode a continuous minute. It does **not** establish that this visibly low-poly style—or the available CPU, tools and assets—can meet the requested film-quality bar or cover 44 scenes. Blender's Python wheel still cannot run because required system graphics libraries are missing; Panda3D enabled only the limited primitive-based POC. There is no camera, video-generation/performance-capture system, GPU, or local playback device; the container exposes two CPU threads and about 3.8 GiB RAM. The screenplay's runtime and dialogue estimates have not been tested by table read or actual performances. The feature remains **IN PROGRESS / BLOCKED**, not complete.
 
 ## Continuity and technical premise
 
 Tern Systems' Relay platform ingests industrial telemetry and helps utility operators route work orders; it does not control physical equipment. Under deadline pressure, a team ships an AI-assisted event-correlation release. A retry-specific delivery ID is mistaken for a stable source-event ID; a check-then-insert path races across consumers while reading a lagging replica; a stale migration image drops a legacy field but misses the expected uniqueness index; and a readiness probe checks connectivity rather than a full business transaction. A downstream timeout after commit amplifies retries. Green infrastructure indicators coexist with duplicate and unconfirmed work orders. The team must choose containment and honest reconciliation over an unsafe rollback or a reassuring but unsupported public statement.
 
-The AI assistant is neither a villain nor an authority. Responsibility lies in code, tests, deployment artifacts, schema compatibility, observability, and deadline decisions shared across the team. The POC's fictional dashboard and IDs follow the project technical-validation note; it does not represent a real utility, customer, secret, or production system.
+The AI assistant is neither a villain nor an authority. Responsibility lies in code, tests, deployment artifacts, schema compatibility, observability, and deadline decisions shared across the team. POC dashboard text and IDs are fictional and follow the project's technical-validation note; no real utility, customer, secret or production system is represented.
 
 ## Project documents and tracking
 
-- [`screenplay/Screenplay_v1.md`](screenplay/Screenplay_v1.md) — full draft with 44 timed scenes.
+- [`screenplay/Screenplay_v1.md`](screenplay/Screenplay_v1.md) — full draft with 44 timed scenes; timing remains unmeasured.
 - [`production/continuity_bible.md`](production/continuity_bible.md) — character, visual, sound, location, interface and performance continuity.
 - [`production/technical_validation.md`](production/technical_validation.md) — incident causality, failure/recovery semantics and engineering realism checks.
 - [`production/scene_manifest.csv`](production/scene_manifest.csv) — 44 planned scenes, still unproduced.
 - [`production/shot_manifest.csv`](production/shot_manifest.csv) — 132 planned feature shots, still unproduced.
-- [`production/proof_of_concept_report.md`](production/proof_of_concept_report.md) — what the POC contains, how it was made, requirements met/unmet, and review limits.
-- [`production/quality_report.md`](production/quality_report.md) — measured MP4 properties, full-decoder/frame checks, selected-frame review, and open QC.
-- [`production/render_manifest.csv`](production/render_manifest.csv) — POC timeline ranges and frame-level review records; not separate clips.
-- [`production/production_log.md`](production/production_log.md) — actions, environment, render and production boundary.
-- [`production/capability_audit.md`](production/capability_audit.md) — actual operating environment, installed temporary tools, Blender blocker, and current feasibility assessment.
-- [`production/production_state.json`](production/production_state.json) — resumable machine-readable status. The feature-master fields remain null.
-- [`production/build_manifest.py`](production/build_manifest.py) — generator for the planned 44-scene/132-shot manifests; it creates planning metadata only.
-- [`production/check_preproduction.py`](production/check_preproduction.py) and [`production/preproduction_qc.md`](production/preproduction_qc.md) — screenplay/manifest timing checks. The QA report's original no-media statements are a historical pre-POC snapshot; its addendum points to current POC QC.
-- [`scripts/render_poc.py`](scripts/render_poc.py) — procedural POC animation/soundscape renderer. Temporary Python packages and FFmpeg/FFprobe binaries are not stored in this repository.
+- [`production/proof_of_concept_report.md`](production/proof_of_concept_report.md) — contents, pipeline, acceptance assessment and limits of both POCs.
+- [`production/quality_report.md`](production/quality_report.md) — measured media properties, decode/frame checks, selected-frame review and open QC.
+- [`production/render_manifest.csv`](production/render_manifest.csv) — timeline review ranges for both POC versions inside their continuous files; not separate clips.
+- [`production/qc_poc_3d.json`](production/qc_poc_3d.json) — machine-readable FFprobe/FFmpeg validation of the current 3D MP4.
+- [`production/production_log.md`](production/production_log.md) — environment audit, render actions and production boundaries.
+- [`production/capability_audit.md`](production/capability_audit.md) — initial and fresh checks, temporary tools, Panda3D/Blender findings and feasibility limits.
+- [`production/production_state.json`](production/production_state.json) — resumable machine-readable status; feature-master fields remain null.
+- [`production/build_manifest.py`](production/build_manifest.py) — generator for the planned 44-scene/132-shot manifests; planning metadata only.
+- [`production/check_preproduction.py`](production/check_preproduction.py) and [`production/preproduction_qc.md`](production/preproduction_qc.md) — screenplay/manifest checks; the original no-media statements are a historical pre-POC snapshot, with the POC status documented in later reports.
+- [`scripts/render_poc.py`](scripts/render_poc.py) — 2D prototype renderer and generated soundscape routines.
+- [`scripts/render_poc_3d.py`](scripts/render_poc_3d.py) — Panda3D procedural 3D POC renderer.
+- [`scripts/validate_media.py`](scripts/validate_media.py) — repeatable FFprobe/FFmpeg media validation. Temporary packages/binaries remain outside the repository.
 
 ## Delivery record
 
 | Deliverable | Status |
 |---|---|
-| 60-second moving-image POC | **Rendered; technical file checks passed; representative stills reviewed.** Full human playback/listening review remains open. |
+| 60-second procedural 3D POC | **Rendered; automated technical checks passed; six selected frames reviewed.** Visibly low-poly, not cinematic realism. Human full playback/listening and approval remain open. |
+| Historical 60-second 2D POC | **Preserved; technical checks passed; not the current 3D POC.** |
 | Continuous approximately 30-minute feature | **Not produced.** |
-| 4K / 24 fps feature master | **Not produced.** The POC is 720p. |
-| Human live-action/photoreal or lip-synced ensemble performances | **Not produced.** POC is procedural 2D and has no dialogue. |
-| Full final dialogue, original score, mix, 5.1 master, viewing copy, trailer, poster, screenplay PDF | **Not produced.** POC contains only synthesized non-dialogue sound. |
-| POC SHA-256 / verified repo artifact | Checksum is recorded above; public branch entry was verified via the GitHub Contents API and downloaded back byte-for-byte. No feature-master checksum/link exists. |
-| GitHub Release | **Not created.** A proof of concept is not being presented as the completed film. |
+| 4K / 24 fps feature master | **Not produced.** The current POC is 720p. |
+| Human live-action/performance-capture or lip-synced ensemble performances | **Not produced.** |
+| Feature dialogue, original score, final mix, 5.1 master, viewing copy, trailer, poster, screenplay PDF | **Not produced.** The POC contains only generated non-dialogue sound. |
+| POC checksum / branch artifact | **Checksum and technical QC recorded.** A branch POC is not a feature master or release. |
+| GitHub Release | **Not created.** No feature-film download/streaming link is claimed. |
 
 ## Provenance and licensing notes
 
-The story, characters, company, product, utility, interfaces and incident data are fictional. The screenplay draft, continuity/technical notes, manifest generator, planned shot descriptions and POC renderer were created by the Arena AI agent from the user's brief; no human rewrite or independent engineering/operations approval is recorded. No human performers, production crew, recording assets, outside video, model weights, generated stills, or third-party audio are claimed. The POC uses programmatically drawn shapes, system-installed DejaVu Sans text (no font binary copied into the repository), and synthesized audio. The capability audit records the observed font license and temporary tooling. The bundled FFmpeg build used for H.264 encoding is GPL-enabled and was not redistributed; no formal H.264 patent/commercial-distribution review was performed, so this POC is not a commercial master. Future production must document asset/model provenance, performer/voice rights, music rights, tool terms and any required distribution disclosures before release.
+The story, characters, company, product, utility, interfaces and incident data are fictional. The screenplay draft, continuity/technical notes, manifest generator and POC code were created from the user's brief; no independent engineering/operations or creative approval is recorded. No human performers, recording assets, outside video, character model, model weights, generated stills or third-party audio are claimed. The 3D scene is assembled from procedural geometry; the sound is synthesized. Text uses the system-installed DejaVu Sans font; no font binary is copied into the repository. Panda3D 1.10.16's wheel metadata identifies the Modified BSD license. Temporary FFmpeg 7.0.2 is GPL-enabled and was not redistributed. No formal H.264 patent/commercial-distribution review was performed; these POCs are not commercial masters. Future production must document asset/model provenance, performer/voice rights, music rights, tool terms and any required distribution disclosures before release.
 
 ## Resume requirements
 
 1. Preserve this screenplay, continuity bible, technical validation and 132-shot plan unless the user explicitly requests a story revision.
-2. Before scaling, have a human play the POC from start to finish, listen to the mix, and record creative/technical notes. The current report is not that sign-off.
-3. Establish an authorized zero-cost (or explicitly funded) workflow for consistent moving performances/animation, dialogue, asset provenance, and post-production. Do not treat one stylized POC scene as coverage for the 44-scene feature.
-4. Produce and review every feature scene/shot against the script and continuity bible; track source paths, licenses, versions and actual review status in the manifests.
-5. Render an actual full-length master, verify runtime/codec/resolution/frame rate/audio, complete a full playback pass, compute its checksum, and download it back from an authorized host before reporting delivery.
+2. Have a human play the 3D POC start-to-finish, listen to its sound, and record explicit acceptance/rejection notes for the low-poly style before any feature-scale decision. This report is not that sign-off.
+3. If realism is rejected, establish an authorized zero-cost (or explicitly funded) quality-level animation/performance, dialogue, asset-provenance and post workflow. Do not treat one stylized POC as coverage for the 44-scene feature.
+4. Table-read the existing screenplay and measure actual performance/scene timings before changing runtime targets. Current duration estimates are not verified.
+5. Produce and continuity-review every actual feature scene/shot against the script; track paths, rights, versions and review status in the manifests. Never mark planned shots produced without media.
+6. Render an actual full-length master, validate runtime/codec/resolution/frame rate/audio, complete human playback and QC, compute its checksum, and download-verify it from an authorized host before reporting delivery.
