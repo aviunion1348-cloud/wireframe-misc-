@@ -1,0 +1,96 @@
+{
+  "project_title": "PROJECT ZERO-DAY: THE LAST DEPLOY",
+  "state_version": 1,
+  "last_updated_utc": "2026-10-13",
+  "overall_status": "PREPRODUCTION PACKAGE CREATED; LIVE-ACTION / VIDEO PRODUCTION BLOCKED",
+  "repository": {
+    "name_with_owner": "aviunion1348-cloud/wireframe-misc-",
+    "url": "https://github.com/aviunion1348-cloud/wireframe-misc-",
+    "visibility_verified": "public",
+    "permission_verified": "admin",
+    "working_branch": "arena/3f506b54-wireframe-misc",
+    "git_lfs_available": false,
+    "external_video_or_object_storage_connector_available": false
+  },
+  "capability_assessment": {
+    "video_generation_or_performance_capture_tool_exposed": false,
+    "video_editor_or_render_farm_exposed": false,
+    "ffmpeg_available": false,
+    "ffprobe_available": false,
+    "blender_available": false,
+    "manim_available": false,
+    "gpu_detected": false,
+    "image_generation_tool_available": true,
+    "image_generation_is_accepted_as_moving_performance": false,
+    "speech_synthesis_tool_available": true,
+    "speech_synthesis_can_produce_a_lip_synced_ensemble_film": false,
+    "python_media_packages_available": {
+      "opencv": false,
+      "moviepy": false,
+      "pillow": false,
+      "numpy": false,
+      "pytorch": false,
+      "diffusers": false
+    },
+    "free_disk_at_inspection_approx_gb": 20,
+    "assessment": "No tool in this session can produce convincing continuous moving performances or render and inspect a 30-minute 4K film. Static images or narration alone were not presented as a movie."
+  },
+  "phase_status": {
+    "A_preproduction": "DRAFTED: screenplay, continuity bible, technical chain, and timed manifests exist; still require independent domain and creative review.",
+    "B_assets_and_performances": "BLOCKED: no video-generation/performance tool, recording assets, or production performers available.",
+    "C_principal_assembly": "NOT STARTED: no footage or recorded dialogue exists.",
+    "D_post_production_and_qc": "NOT STARTED: no media renderer/FFmpeg/FFprobe available; no completed film to review."
+  },
+  "planned_scope": {
+    "target_runtime_seconds": 1800,
+    "runtime_is_measured": false,
+    "target_resolution": "3840x2160",
+    "target_frame_rate": "24 fps constant",
+    "target_aspect_ratio": "2.39:1 composition within UHD 16:9",
+    "scene_count": 44,
+    "planned_shot_count": 132,
+    "produced_shot_count": 0,
+    "performed_dialogue_recordings": 0,
+    "produced_music_or_sound_assets": 0
+  },
+  "created_files": [
+    "README.md",
+    "screenplay/Screenplay_v1.md",
+    "production/continuity_bible.md",
+    "production/technical_validation.md",
+    "production/scene_manifest.csv",
+    "production/shot_manifest.csv",
+    "production/build_manifest.py",
+    "production/check_preproduction.py",
+    "production/preproduction_qc.md",
+    "production/production_state.json"
+  ],
+  "unproduced_deliverables": [
+    "4K movie master",
+    "any moving live-action or performance-driven video",
+    "screenplay PDF",
+    "trailer",
+    "poster",
+    "recorded dialogue",
+    "original score and final sound mix",
+    "5.1 master",
+    "viewing copy",
+    "SHA-256 checksum for a film master",
+    "verified film download or streaming link"
+  ],
+  "delivery": {
+    "master_path": null,
+    "master_sha256": null,
+    "direct_download_url": null,
+    "release_created": false,
+    "upload_verified": false,
+    "reason": "No rendered, inspected master file exists; publishing a placeholder or claiming a film upload would be misleading."
+  },
+  "resume_requirements": [
+    "Provide access to a genuine video-generation/performance capture or live-action production workflow capable of continuous human performance, plus a sound/post pipeline.",
+    "Generate and review every planned scene/shot against the script and continuity bible; update both manifests with source asset paths, version, rights, and review status.",
+    "Record/produce consistent dialogue, room tone, sound effects, and original licensed music; edit and mix to spec.",
+    "Render the completed film; independently validate codec, resolution, constant frame rate, measured runtime, audio, and frame continuity with FFprobe and a full playback pass.",
+    "Only after successful QC, compute SHA-256, publish the real master using a verified authorized host/release asset, download it back, and update the README with verified specs and a working link."
+  ]
+}
