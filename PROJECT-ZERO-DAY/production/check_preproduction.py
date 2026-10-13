@@ -79,11 +79,11 @@ def main() -> None:
     if (ROOT / "film" / "Project_Zero_Day_4K.mp4").exists():
         raise AssertionError("Unexpected movie file exists; inspect it before updating status")
 
-    print("PREPRODUCTION QA PASS")
+    print("PREPRODUCTION QA PASS — document/timing checks only")
     print("44 screenplay scenes; screenplay and scene manifest targets match at 1,800 seconds.")
-    print("132 planned shots; three per scene; timecodes span 00:00:00:00–00:30:00:00.")
-    print("Every scene/shot is marked not produced; production state lists no master or link.")
-    print("This does not validate a movie: no footage, audio, rendered file, or playback exists.")
+    print("132 planned feature shots; three per scene; timecodes span 00:00:00:00–00:30:00:00.")
+    print("Every planned feature scene/shot remains unproduced; no feature master or download is listed.")
+    print("This check does not validate the separate 60-second POC or any completed movie; see proof_of_concept_report.md and quality_report.md.")
 
 
 if __name__ == "__main__":

@@ -34,4 +34,8 @@ The check verifies scene IDs and order, the 1,800-second target, screenplay-to-s
 
 ## Not checked / not passed
 
-There is no MP4/MOV, no continuous moving footage, no recorded dialogue, no music or sound mix, and no screenplay PDF. FFmpeg/FFprobe are unavailable. Consequently, film duration, 4K resolution, codec, frame rate, audio sync, frozen/repeated frames, shot order, color continuity, character continuity in actual footage, complete playback, checksum, and working film download have **not** been verified. The feature film remains unproduced.
+At the time this preproduction-only check was recorded, there was no MP4/MOV, continuous moving footage, recorded dialogue, music/sound mix, or screenplay PDF, and FFmpeg/FFprobe had not yet been installed. Those statements are a historical snapshot, not the current production state. The 30-minute feature remains unproduced.
+
+## Later production addendum — 2026-10-13
+
+A subsequent production pass installed temporary user-space FFmpeg/FFprobe tooling and rendered a separate 60-second stylized 2D proof of concept. The POC is documented and technically checked in [`proof_of_concept_report.md`](proof_of_concept_report.md) and [`quality_report.md`](quality_report.md). This does not change any of the 132 planned feature-shot statuses and does not constitute a 30-minute movie, full playback review, or feature QC pass.
