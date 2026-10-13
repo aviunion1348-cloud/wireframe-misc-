@@ -7,6 +7,7 @@ This repository contains the existing 44-scene screenplay and preproduction pack
 ## Actual video deliverable
 
 - **File:** [`renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4`](renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4)
+- **Verified public repository file page:** [GitHub](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4) · [direct MP4 download](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4). The GitHub Contents API reported the uploaded path/size/Git blob hash; raw API bytes were downloaded back and compared byte-for-byte with the local file.
 - **Measured:** MP4, 60.000 seconds; H.264 High, 1280×720, 24 fps, 1,440 frames; AAC-LC stereo 48 kHz; 5,071,735 bytes.
 - **SHA-256:** `77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`.
 - This is one continuous procedural 2D animation sequence: a stylized engineer types at a workstation during a canary deployment, notices an asynchronous queue anomaly, traces duplicate delivery/late receipt evidence, and pauses outbound dispatch while preserving intake. The figure's face, body, eyes, hands and posture move; interface values and camera framing change over time. It is not a still-image pan or slideshow.
@@ -53,7 +54,7 @@ The AI assistant is neither a villain nor an authority. Responsibility lies in c
 | 4K / 24 fps feature master | **Not produced.** The POC is 720p. |
 | Human live-action/photoreal or lip-synced ensemble performances | **Not produced.** POC is procedural 2D and has no dialogue. |
 | Full final dialogue, original score, mix, 5.1 master, viewing copy, trailer, poster, screenplay PDF | **Not produced.** POC contains only synthesized non-dialogue sound. |
-| POC SHA-256 / verified repo artifact | Checksum is recorded above; remote branch verification is logged after actual publication. No feature-master checksum/link exists. |
+| POC SHA-256 / verified repo artifact | Checksum is recorded above; public branch entry was verified via the GitHub Contents API and downloaded back byte-for-byte. No feature-master checksum/link exists. |
 | GitHub Release | **Not created.** A proof of concept is not being presented as the completed film. |
 
 ## Provenance and licensing notes

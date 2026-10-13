@@ -10,7 +10,7 @@
     "permission_verified": "admin",
     "working_branch": "arena/3f506b54-wireframe-misc",
     "preproduction_base_commit": "e3601ce1fbdc2fb5c2c00678a0404b92fc49a2cf",
-    "production_commit": null,
+    "production_commit": "e34741f51a7125d8d76288b6232aff496043f96a",
     "git_lfs_available": false,
     "external_video_or_object_storage_connector_available": false
   },
@@ -130,11 +130,16 @@
     "master_sha256": null,
     "direct_download_url": null,
     "poc_repository_path": "PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4",
-    "poc_github_file_url": null,
-    "poc_upload_verified": false,
+    "poc_github_file_url": "https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4",
+    "poc_direct_download_url": "https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4",
+    "poc_upload_verified": true,
+    "poc_remote_size_bytes": 5071735,
+    "poc_remote_git_blob_sha": "53a93b95f570344cc7bedaca851e8db88e8b322a",
+    "poc_raw_api_download_byte_comparison_passed": true,
+    "poc_upload_commit": "e34741f51a7125d8d76288b6232aff496043f96a",
     "release_created": false,
     "feature_master_upload_verified": false,
-    "reason": "A POC file exists, but it is not the requested feature master. No release or feature-film download link is claimed."
+    "reason": "The POC branch artifact was verified and downloaded back byte-for-byte. It is not the requested feature master; no feature release or completed-film link is claimed."
   },
   "resume_requirements": [
     "Keep the POC explicitly separate from the full film; first obtain a human full-playback and listening review of the POC and record notes.",

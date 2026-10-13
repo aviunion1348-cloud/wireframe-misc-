@@ -37,4 +37,4 @@
 - Only the listed representative frames were visually opened; no frame-by-frame art/continuity review, legal review, color-grade pass, complete performance assessment, or feature-level QC was performed.
 - This 1280×720, 60-second clip does not meet the full-film target of approximately 30 minutes and native 4K. The existing 44 scenes and 132-shot feature plan remain unproduced.
 - The selected H.264 encoder build is GPL-enabled and was not redistributed. No formal patent/commercial-distribution review was performed; the POC is not a commercial master.
-- No GitHub Release or film-master upload is claimed. The POC is a small preview asset; repository-branch write/read verification is tracked in the production log after publication.
+- No GitHub Release or feature-master upload is claimed. The POC was pushed on the fixed branch; GitHub Contents API metadata, Git blob SHA, raw API download-back size, SHA-256 and byte comparison passed. See the production log for commit and URLs.

@@ -9,7 +9,7 @@
 - Current HEAD at audit: `e3601ce1fbdc2fb5c2c00678a0404b92fc49a2cf`, matching `origin/arena/3f506b54-wireframe-misc`.
 - `git status` was clean before this production pass.
 - Confirmed existing screenplay, continuity bible, technical validation, 132-shot plan, preproduction QA record, and generator.
-- GitHub CLI is authenticated as `aviunion1348-cloud`; `gh repo view` reports the public destination `aviunion1348-cloud/wireframe-misc-` and `ADMIN` permission. No release was listed. Git LFS is not installed. The prior preproduction commit is present on the remote; the next production commit/push will be the write verification for this pass.
+- GitHub CLI is authenticated as `aviunion1348-cloud`; `gh repo view` reports the public destination `aviunion1348-cloud/wireframe-misc-` and `ADMIN` permission. No release was listed. Git LFS is not installed. The preproduction commit was present at audit start; production commit `e34741f51a7125d8d76288b6232aff496043f96a` was subsequently pushed to this session branch and the POC file was verified through the GitHub Contents API and a byte-for-byte API download-back. No release was created.
 - No external object-storage/video-hosting connector is available. Release/LFS quotas and maximum asset size have not been tested or inferred.
 
 ## Operating environment
@@ -69,4 +69,11 @@
 - The 60-second POC succeeded as a *limited procedural-animation proof*. It does not remove the blockers to a full production: there is no filmed/performance-capture footage, no multi-character/44-scene animation pipeline, no local speech/performer workflow, no audio playback hardware, and only two CPU threads / 3.8 GiB RAM. The existing screenplay, continuity notes, technical validation, and 132-shot feature plan remain the source of truth and their planned-shot records remain unproduced.
 - No Blender library stubs, paid service, outside model weights, external media, or system-wide package installation was used. The POC uses programmatically drawn imagery, a system-installed DejaVu Sans font (Bitstream Vera-derived license; no font file copied into the repo), and synthesized sound only.
 - Blender-based 3D production remains blocked until the missing OS graphics libraries can be supplied through an authorized package path. Do not fabricate/stub them.
-- Full feature work remains **IN PROGRESS / BLOCKED** pending a legitimate performance/animation workflow, dialogue/voice rights, art/shot production across the existing plan, sufficient rendering/post capacity, and verified full-playback/QC. No feature completion date, release, or film link is claimed.
+- Full feature work remains **IN PROGRESS / BLOCKED** pending a legitimate performance/animation workflow, dialogue/voice rights, art/shot production across the existing plan, sufficient rendering/post capacity, and verified full-playback/QC. No feature completion date, release, or feature-film link is claimed.
+
+## Repository publication verification — 2026-10-13
+
+- Pushed commit `e34741f51a7125d8d76288b6232aff496043f96a` to `arena/3f506b54-wireframe-misc` only. `git ls-remote` returned that same commit for the branch.
+- GitHub Contents API reported the POC path, `5,071,735` bytes, and Git blob SHA `53a93b95f570344cc7bedaca851e8db88e8b322a`, matching the local object.
+- Retrieved the POC bytes from the GitHub API's raw-content response (API host) to `/tmp`, then compared size, SHA-256 (`77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`), and all bytes against the local MP4; comparison passed.
+- Public file page: <https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4>. GitHub API-provided direct-download URL is in the project README/state. This is a repository-branch POC artifact, **not** a GitHub Release or full-film delivery.

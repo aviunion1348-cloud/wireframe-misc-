@@ -36,8 +36,12 @@
 
 - This is one continuous, 60-second, flat-color procedural 2D proof of concept. It is not a trailer, finished movie, live-action capture, Blender 3D, photoreal footage, or full performance. It contains no spoken dialogue, voice recording, or lip sync.
 - The existing feature plan still requires 44 scenes/132 moving shots, multiple locations and characters, continuous acting, dialogue, full sound/post, and independent creative/technical review. Those feature assets do not exist. No 30-minute or 4K master exists.
-- The current public repo will receive the small POC and production records on the fixed Arena branch only. A release will not be created for a POC. Remote write/read verification and the final commit are to be recorded here only after they actually succeed.
+- The POC and production records were pushed only to the fixed Arena branch. No release was created because this is a proof of concept, not the feature.
 
-## Repository publication
+## Repository publication verification
 
-*Pending at time this log was drafted.* After pushing, replace this note with the actual commit ID, branch, uploaded-file API size/hash metadata, remote fetch result, and the browser-facing GitHub file URL. If any step fails, record the exact error and leave upload status unverified.
+- **Commit containing the POC:** `e34741f51a7125d8d76288b6232aff496043f96a` (`production: render verified 60-second proof of concept`). It was pushed to `arena/3f506b54-wireframe-misc`; `git ls-remote` returned the same commit for that branch.
+- GitHub Contents API reported `PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4`, size `5,071,735` bytes, Git blob SHA `53a93b95f570344cc7bedaca851e8db88e8b322a`; the SHA matched the local Git blob.
+- Downloaded the raw file through the GitHub API to `/tmp/zero-day-remote-verified.mp4`; size was `5,071,735` bytes, SHA-256 was `77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`, and `cmp` reported a byte-for-byte match with the local MP4.
+- [GitHub file page](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4) · [API-reported direct download URL](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4).
+- The branch file is a verified POC delivery only. No GitHub Release, 30-minute feature master, or feature download link exists.
