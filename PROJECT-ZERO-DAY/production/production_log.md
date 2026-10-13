@@ -78,4 +78,13 @@
 - The actual output is conspicuously primitive/low-poly, not cinematic or photorealistic. There is no live actor, dialogue, lip-sync or recorded performance. Full real-time playback/listening and artistic approval have not happened. This is a technical POC, not the 30-minute film. Do not scale up or mark shots produced based on encode/decode success.
 - Preserved the screenplay, continuity bible, technical validation, scene manifest, 132-shot plan, 2D POC, and previous remote verification record. Updated the POC report, quality report, render manifest and machine-readable state to distinguish the new 3D proof from the historical 2D prototype. The existing 30-minute timing estimate remains unmeasured; no table read was possible.
 - Re-ran `production/check_preproduction.py` after updating the machine-readable state: **PASS**. It confirms 44 scene entries, 132 planned shots, the 1,800-second plan and zero produced feature shots; it is a document/timing check, not media QC.
-- Added `scripts/validate_media.py` and its JSON output. No commit/push for these 3D changes had yet been made when this entry was written; the next step is to verify repository destinations after pushing only on the fixed Arena branch, then record remote byte verification. No feature render/release is planned or claimed.
+- Added `scripts/validate_media.py` and its JSON output. At the time that production entry was written, no 3D commit/push had yet been made. No feature render/release is planned or claimed.
+
+### 3D POC branch publication verification
+
+- Committed the 3D POC and records as `3a674a6109979d728a9fd94079d912f2accd9e22` (`production: render and validate procedural 3D POC`) and pushed **only** to `arena/3f506b54-wireframe-misc`.
+- `git ls-remote --heads origin arena/3f506b54-wireframe-misc` returned the same branch head `3a674a6109979d728a9fd94079d912f2accd9e22`.
+- GitHub Contents API for `PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4` reported size `6,284,063` bytes and Git blob SHA `060426f7f8192e20a2567b0e8b553119f7d73761`, matching the local Git blob.
+- Retrieved the raw file through the GitHub API using `Accept: application/vnd.github.raw+json` to `/tmp/zero-day-3d-remote-verified.mp4`. Remote size was `6,284,063` bytes; SHA-256 was `709661f705b401c8eb48b255243371f17a2e7e6087b6373b78de78816387b8ae`; `cmp` passed byte-for-byte against the local render.
+- [3D POC GitHub file page](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4) · [direct MP4 download](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4).
+- This confirms only the POC branch artifact. No GitHub Release, full-film master, completed-film link, full playback or artistic acceptance exists.

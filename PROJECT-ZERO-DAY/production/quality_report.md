@@ -50,4 +50,4 @@ PYTHONDONTWRITEBYTECODE=1 python3 PROJECT-ZERO-DAY/scripts/validate_media.py \
 
 The earlier `renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4` remains preserved. It independently passed the validator: 60.000 seconds, H.264/AAC, 1280×720, 24 fps, 1,440 frames, complete decode, no consecutive identical frame pairs, and no active-picture black intervals. Its size is 5,071,735 bytes and SHA-256 is `77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`. It is an earlier flat 2D procedural prototype, not a substitute for the current 3D POC.
 
-No GitHub Release, 30-minute master or feature upload is claimed. After the current branch update, the 3D POC's destination and byte integrity should be verified separately; a branch file is not a production release.
+The 3D POC was pushed to the fixed Arena branch in commit `3a674a6109979d728a9fd94079d912f2accd9e22`. GitHub Contents API reported 6,284,063 bytes and blob SHA `060426f7f8192e20a2567b0e8b553119f7d73761`; the raw API download had the local SHA-256 and passed a byte-for-byte comparison. This is a verified branch POC only. No GitHub Release, 30-minute master or feature upload is claimed.

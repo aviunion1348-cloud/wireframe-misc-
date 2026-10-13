@@ -86,4 +86,11 @@
 - Pushed commit `e34741f51a7125d8d76288b6232aff496043f96a` to `arena/3f506b54-wireframe-misc` only. `git ls-remote` returned that same commit for the branch.
 - GitHub Contents API reported the POC path, `5,071,735` bytes, and Git blob SHA `53a93b95f570344cc7bedaca851e8db88e8b322a`, matching the local object.
 - Retrieved the POC bytes from the GitHub API's raw-content response (API host) to `/tmp`, then compared size, SHA-256 (`77129504abfc087e1b794532c193a681862e4b66b0cfd5b7231cd8fdaa37a237`), and all bytes against the local MP4; comparison passed.
-- Public file page: <https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4>. GitHub API-provided direct-download URL is in the project README/state. This is a repository-branch POC artifact, **not** a GitHub Release or full-film delivery.
+- Public 2D file page: <https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s.mp4>. GitHub API-provided direct-download URL is in the project README/state. This is a repository-branch POC artifact, **not** a GitHub Release or full-film delivery.
+
+## Fresh 3D POC repository verification — 2026-10-13
+
+- Committed and pushed `3a674a6109979d728a9fd94079d912f2accd9e22` to the fixed branch `arena/3f506b54-wireframe-misc`; `git ls-remote` confirmed that exact remote head.
+- The GitHub Contents API reported `6,284,063` bytes and blob SHA `060426f7f8192e20a2567b0e8b553119f7d73761` for `Project_Zero_Day_Proof_of_Concept_60s_3D.mp4`. The reported Git blob matched the local `git hash-object` result.
+- Downloaded the raw bytes through the GitHub API using the raw-content `Accept` header. Remote SHA-256 was `709661f705b401c8eb48b255243371f17a2e7e6087b6373b78de78816387b8ae`; size and `cmp` matched the local file exactly.
+- [3D POC file page](https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4) · [direct MP4 URL](https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4). This verifies a public branch artifact only; no release or feature-film delivery exists.

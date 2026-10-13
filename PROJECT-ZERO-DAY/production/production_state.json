@@ -12,6 +12,7 @@
     "preproduction_package_commit": "e3601ce1fbdc2fb5c2c00678a0404b92fc49a2cf",
     "historical_2d_poc_commit": "e34741f51a7125d8d76288b6232aff496043f96a",
     "branch_head_before_current_3d_changes": "d05d69dad4c7d09b5d750c6454c301e5baac6856",
+    "current_3d_poc_commit": "3a674a6109979d728a9fd94079d912f2accd9e22",
     "git_lfs_available": false,
     "external_video_or_object_storage_connector_available": false
   },
@@ -154,13 +155,14 @@
     "primary_poc_repository_path": "PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4",
     "primary_poc_github_file_url": "https://github.com/aviunion1348-cloud/wireframe-misc-/blob/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4",
     "primary_poc_direct_download_url": "https://raw.githubusercontent.com/aviunion1348-cloud/wireframe-misc-/arena/3f506b54-wireframe-misc/PROJECT-ZERO-DAY/renders/previews/Project_Zero_Day_Proof_of_Concept_60s_3D.mp4",
-    "primary_poc_upload_verified": false,
-    "primary_poc_remote_size_bytes": null,
-    "primary_poc_remote_git_blob_sha": null,
-    "primary_poc_raw_download_byte_comparison_passed": false,
+    "primary_poc_upload_verified": true,
+    "primary_poc_remote_size_bytes": 6284063,
+    "primary_poc_remote_git_blob_sha": "060426f7f8192e20a2567b0e8b553119f7d73761",
+    "primary_poc_raw_download_byte_comparison_passed": true,
+    "primary_poc_upload_commit": "3a674a6109979d728a9fd94079d912f2accd9e22",
     "release_created": false,
     "feature_master_upload_verified": false,
-    "reason": "A prior 2D POC is on the branch and was download-verified. The new 3D preview is not considered remotely delivered until the current commit is pushed and its remote bytes are checked. No release or feature master exists."
+    "reason": "The 3D POC was pushed to the fixed Arena branch; GitHub Contents API size/blob metadata matched and raw API download bytes matched the local file byte-for-byte. This is a branch POC only, not a release or feature master."
   },
   "resume_requirements": [
     "Obtain a human full-playback and listening review of the 3D POC; document accept/reject notes for its low-poly visual style before any feature-scale decision.",
